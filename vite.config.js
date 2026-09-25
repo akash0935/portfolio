@@ -2,7 +2,8 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: './',
+  // Automatically use /portfolio/ on GitHub Actions / Pages, and ./ for local dev
+  base: process.env.GITHUB_ACTIONS ? '/portfolio/' : './',
   server: {
     port: 5173,
     open: false

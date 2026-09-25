@@ -14,7 +14,18 @@ let lastRenderedIndex = -1;
 // Path to uncompressed 2560x1440 Quad-HD master frames extracted from Video_Project.mp4
 function getFramePath(index) {
   const pad = String(index).padStart(3, '0');
-  return `./frames/frame_${pad}.jpg`;
+  
+  // Resolve base directory dynamically (works under /portfolio/, /, and relative paths)
+  let base = import.meta.env.BASE_URL || './';
+  if (!base.endsWith('/')) base += '/';
+
+  // If base is relative './', anchor it to actual window pathname directory
+  if (base === './' || base === '') {
+    const loc = window.location.pathname;
+    base = loc.substring(0, loc.lastIndexOf('/') + 1) || '/';
+  }
+
+  return `${base}frames/frame_${pad}.jpg`;
 }
 
 // Pixel-perfect canvas sizing matching physical display pixels
@@ -136,45 +147,58 @@ function animateLoop() {
   }
 }
 
+let loaderDismissed = false;
+function dismissLoader() {
+  if (loaderDismissed) return;
+  loaderDismissed = true;
+  if (loader) {
+    loader.classList.add('loaded');
+    setTimeout(() => {
+      if (loader) loader.style.display = 'none';
+    }, 400);
+  }
+}
+
 // Preload & Pre-decode frames directly into GPU memory
 function preloadFrames() {
+  // Hard Failsafe: NEVER block user on loading screen for more than 1.5 seconds under any network conditions
+  setTimeout(dismissLoader, 1500);
+
+  function handleFrameProgress(frameIndex, success) {
+    loadedCount++;
+
+    // When the very first frame is ready, paint it immediately and unlock site
+    if (success && frameIndex === 0 && lastRenderedIndex === -1) {
+      renderFrame(0);
+      setTimeout(dismissLoader, 300);
+    }
+
+    // Update loader percentage smoothly
+    const percent = Math.min(100, Math.round((loadedCount / TOTAL_FRAMES) * 100));
+    if (loaderProgress) {
+      loaderProgress.textContent = `${percent}%`;
+    }
+
+    // Unlock once initial batch (first 10 frames) is ready for scrolling or all complete
+    if (loadedCount >= 10 || loadedCount >= TOTAL_FRAMES) {
+      dismissLoader();
+    }
+  }
+
   for (let i = 0; i < TOTAL_FRAMES; i++) {
     const img = new Image();
     img.src = getFramePath(i + 1);
     images[i] = img;
 
     img.onload = () => {
-      loadedCount++;
-
-      // Pre-decode into bitmap to prevent decoding hitches during scrolling
       if (img.decode) {
         img.decode().catch(() => {});
       }
-
-      // When the very first frame is ready, paint it immediately
-      if (i === 0 && lastRenderedIndex === -1) {
-        renderFrame(0);
-      }
-
-      // Update loader percentage
-      const percent = Math.round((loadedCount / TOTAL_FRAMES) * 100);
-      if (loaderProgress) {
-        loaderProgress.textContent = `${percent}%`;
-      }
-
-      // Hide loader once all frames are ready
-      if (loadedCount >= TOTAL_FRAMES) {
-        if (loader) {
-          loader.classList.add('loaded');
-          setTimeout(() => {
-            if (loader) loader.style.display = 'none';
-          }, 350);
-        }
-      }
+      handleFrameProgress(i, true);
     };
 
     img.onerror = () => {
-      loadedCount++;
+      handleFrameProgress(i, false);
     };
   }
 }
