@@ -28,13 +28,13 @@
     <!-- Project Header Hero -->
     <section class="project-header-hero">
       <div class="project-hero-badge-row">
-        <span class="project-category-pill">Embedded Systems · ESP32 · Voice Recognition</span>
+        <span class="project-category-pill">Arduino Uno · Offline Voice Recognition · DF Player</span>
         <span class="project-meta-pill">Session 2024–2025 · II Semester</span>
-        <span class="project-meta-pill">Minor Project · Dept. of ECE, JIET</span>
+        <span class="project-meta-pill">Guided by: Mr. Prema Ram &amp; Mr. Ajay Kumar Kushwaha · JIET</span>
       </div>
       <h1 class="project-main-title">Voice-Controlled Home Automation System</h1>
       <p class="project-main-description">
-        Designed and implemented an offline voice-controlled smart home automation system for switching high-voltage AC appliances using speech recognition, embedded logic, and optocoupler relay isolation without requiring an internet connection. Both the formal engineering report and defense presentation are available below.
+        Designed and implemented an offline voice-controlled smart home automation system using an Arduino Uno (ATmega328P-PU), an offline speech recognition module, Mini DF Player audio feedback, and a 4-channel optocoupled relay module to switch AC appliances and DC loads without internet dependency. Both the formal engineering report and defense presentation are available below.
       </p>
     </section>
 
@@ -54,27 +54,39 @@
           <ul class="specs-list">
             <li class="spec-item">
               <span class="spec-label">Project Domain</span>
-              <span class="spec-val">Embedded Systems · Voice Command Processing · Power Electronics</span>
+              <span class="spec-val">Embedded Systems · Offline Voice Processing · Power Electronics</span>
+            </li>
+            <li class="spec-item">
+              <span class="spec-label">Team &amp; Guidance</span>
+              <span class="spec-val">Akash Rathore &amp; Darshan Sharma · Guided by Mr. Prema Ram &amp; Mr. Ajay Kumar Kushwaha</span>
             </li>
             <li class="spec-item">
               <span class="spec-label">Main Controller</span>
-              <span class="spec-val">Microcontroller Board (ESP32 / Embedded Processing)</span>
+              <span class="spec-val">Arduino Uno (ATmega328P-PU Microcontroller)</span>
             </li>
             <li class="spec-item">
               <span class="spec-label">Voice Input Interface</span>
-              <span class="spec-val">Offline Speech Recognition Module with Electret Microphone</span>
+              <span class="spec-val">Offline Speech Recognition Module with Electret Mic (Trained Commands)</span>
+            </li>
+            <li class="spec-item">
+              <span class="spec-label">Audio Feedback Unit</span>
+              <span class="spec-val">Mini DF Player + Micro SD Card (MP3 Voice Confirmation Alerts)</span>
             </li>
             <li class="spec-item">
               <span class="spec-label">Power Switching Unit</span>
               <span class="spec-val">4-Channel Optoisolated Relay Module (250V AC / 10A rating)</span>
             </li>
             <li class="spec-item">
-              <span class="spec-label">System Flow</span>
-              <span class="spec-val">Voice Command spoken → Recognition Module decodes acoustic pattern → Sends UART command byte to Controller → Controller toggles corresponding GPIO → Relay switches appliance ON/OFF.</span>
+              <span class="spec-label">Controlled Output Loads</span>
+              <span class="spec-val">High-Voltage AC Appliances, DC Fan, Indicator LED / Bulb</span>
             </li>
             <li class="spec-item">
-              <span class="spec-label">Key Innovation</span>
-              <span class="spec-val">100% offline execution without cloud dependency, eliminating privacy concerns, internet latency, and connectivity dropouts.</span>
+              <span class="spec-label">System Flow</span>
+              <span class="spec-val">Spoken command ("Light On", "Fan Off") → Voice module compares acoustic pattern → Sends trigger signal to Arduino Uno → Controller toggles Relay state &amp; triggers DF Player audio confirmation.</span>
+            </li>
+            <li class="spec-item">
+              <span class="spec-label">Key Innovation &amp; Cost</span>
+              <span class="spec-val">100% offline execution without cloud dependency or latency. Total hardware expenditure: Rs. 830.</span>
             </li>
           </ul>
         </div>
@@ -162,7 +174,7 @@
           <div class="other-card-details">
             <span class="other-card-tag">Project 02 · Embedded Security</span>
             <h4 class="other-card-title">Laser Thief Detection System</h4>
-            <span class="other-card-sub">Laser Diode · LDR · Threshold Detection · Buzzer</span>
+            <span class="other-card-sub">ESP32 · 650nm Laser · LDR · Active Buzzer</span>
           </div>
         </a>
 

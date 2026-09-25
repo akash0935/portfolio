@@ -18,10 +18,10 @@ An interactive, high-performance 3D engineering portfolio for **Akash Rathore**,
 All projects include dedicated showcase pages featuring interactive in-browser PDF previews and direct downloads for both the formal engineering reports (`.pdf` / `.docx`) and defense presentations (`.pdf` / `.pptx`):
 
 1. **Voice-Controlled Home Automation System**
-   - *Tech*: ESP32, Offline Speech Recognition Module, 4-Channel Relay Module, Embedded C
+   - *Tech*: Arduino Uno (ATmega328P-PU), Offline Voice Recognition Module, Mini DF Player MP3 Audio, 4-Channel Relay Module
    - *Documentation*: [Full Report & Presentation](project-home-automation.html)
 2. **Laser Thief Detection System**
-   - *Tech*: Arduino / Microcontroller, 650nm Laser Diode, Cadmium Sulfide LDR, Active Buzzer Alert
+   - *Tech*: ESP32 Microcontroller, 650nm Laser Diode Module, Cadmium Sulfide LDR, 10kΩ Voltage Divider, Active Buzzer Alert
    - *Documentation*: [Full Report & Presentation](project-laser-detection.html)
 3. **BJT-Based Touch Sensor with LED**
    - *Tech*: Analog Electronics, BC547 NPN Transistor, Resistor Biasing, Touch Sensor Plate
