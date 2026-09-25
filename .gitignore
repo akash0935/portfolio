@@ -1,0 +1,43 @@
+# Node dependencies
+node_modules/
+
+# Production build output
+dist/
+
+# Duplicate raw documents in root (canonical files are in public/docs/)
+/*.docx
+/*.pptx
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Editor directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Large raw source videos (frames are in public/frames)
+Video_Project.mp4
+/*.mp4
+
+# Leftover temporary frame extraction folders in root
+/ezgif-*/
+/frames/
+
+# Deployment bundles & local scripts
+GITHUB_DEPLOY_READY/
+*.zip
+*.bat

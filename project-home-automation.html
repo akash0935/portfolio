@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice-Controlled Home Automation — Project Report &amp; Presentation | Akash Rathore</title>
+  <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body class="project-detail-body">
+  <div class="project-page-container">
+    <div class="project-ambient-glow" aria-hidden="true"></div>
+    
+    <!-- Top Navigation -->
+    <header class="project-top-nav">
+      <a href="./index.html#projects" class="nav-back-link">
+        <span>←</span>
+        <span>Back to Portfolio</span>
+      </a>
+      <div class="project-brand-tag">
+        AKASH RATHORE // ECE · VLSI · HARDWARE
+      </div>
+    </header>
+
+    <!-- Project Header Hero -->
+    <section class="project-header-hero">
+      <div class="project-hero-badge-row">
+        <span class="project-category-pill">Embedded Systems · ESP32 · Voice Recognition</span>
+        <span class="project-meta-pill">Session 2024–2025 · II Semester</span>
+        <span class="project-meta-pill">Minor Project · Dept. of ECE, JIET</span>
+      </div>
+      <h1 class="project-main-title">Voice-Controlled Home Automation System</h1>
+      <p class="project-main-description">
+        Designed and implemented an offline voice-controlled smart home automation system for switching high-voltage AC appliances using speech recognition, embedded logic, and optocoupler relay isolation without requiring an internet connection. Both the formal engineering report and defense presentation are available below.
+      </p>
+    </section>
+
+    <!-- Main Content Grid -->
+    <main class="project-content-grid">
+      
+      <!-- Left Column: Visual Poster & Specifications -->
+      <aside class="project-visual-col">
+        <div class="project-poster-wrapper">
+          <img src="./images/home_automation.jpg" alt="Voice-Controlled Home Automation Poster" />
+        </div>
+
+        <div class="project-specs-card">
+          <h3 class="specs-title">
+            <span>⚡</span> Technical Specifications &amp; Overview
+          </h3>
+          <ul class="specs-list">
+            <li class="spec-item">
+              <span class="spec-label">Project Domain</span>
+              <span class="spec-val">Embedded Systems · Voice Command Processing · Power Electronics</span>
+            </li>
+            <li class="spec-item">
+              <span class="spec-label">Main Controller</span>
+              <span class="spec-val">Microcontroller Board (ESP32 / Embedded Processing)</span>
+            </li>
+            <li class="spec-item">
+              <span class="spec-label">Voice Input Interface</span>
+              <span class="spec-val">Offline Speech Recognition Module with Electret Microphone</span>
+            </li>
+            <li class="spec-item">
+              <span class="spec-label">Power Switching Unit</span>
+              <span class="spec-val">4-Channel Optoisolated Relay Module (250V AC / 10A rating)</span>
+            </li>
+            <li class="spec-item">
+              <span class="spec-label">System Flow</span>
+              <span class="spec-val">Voice Command spoken → Recognition Module decodes acoustic pattern → Sends UART command byte to Controller → Controller toggles corresponding GPIO → Relay switches appliance ON/OFF.</span>
+            </li>
+            <li class="spec-item">
+              <span class="spec-label">Key Innovation</span>
+              <span class="spec-val">100% offline execution without cloud dependency, eliminating privacy concerns, internet latency, and connectivity dropouts.</span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Right Column: Interactive Document & Presentation Hub -->
+      <section class="project-doc-hub-col">
+        <div class="doc-hub-container">
+          <div class="doc-hub-header">
+            <h2 class="doc-hub-title">
+              <span>📑</span> Project Documents &amp; Presentation
+            </h2>
+            <p class="doc-hub-subtitle">
+              Browse interactive previews or download the official project files below.
+            </p>
+          </div>
+
+          <!-- Document Tabs -->
+          <div class="doc-tab-buttons" role="tablist">
+            <button class="doc-tab-btn active" id="tabBtnReport" onclick="switchDocTab('report')">
+              <span>📄</span> Project Report (.PDF / .DOCX)
+            </button>
+            <button class="doc-tab-btn" id="tabBtnPpt" onclick="switchDocTab('ppt')">
+              <span>📊</span> Slide Deck (.PDF / .PPTX)
+            </button>
+          </div>
+
+          <!-- Panel 1: Project Report -->
+          <div class="doc-panel active" id="panelReport">
+            <div class="doc-meta-bar">
+              <div class="doc-meta-info">
+                <span class="doc-type-tag">Official Report</span>
+                <span>Voice Control Home Automation Report · II Semester</span>
+              </div>
+              <div class="doc-download-actions">
+                <a href="./docs/voice-automation-report.pdf" target="_blank" rel="noopener noreferrer" class="btn-doc-download primary">
+                  <span>👁️</span> Open Fullscreen PDF
+                </a>
+                <a href="./docs/voice-automation-report.docx" download="REPORT_Voice_control_home_automation_system.docx" class="btn-doc-download">
+                  <span>📥</span> Download Word (.docx)
+                </a>
+              </div>
+            </div>
+
+            <div class="doc-iframe-box">
+              <iframe src="./docs/voice-automation-report.pdf#toolbar=1" title="Voice Automation Project Report PDF Preview"></iframe>
+            </div>
+          </div>
+
+          <!-- Panel 2: Presentation (PPT) -->
+          <div class="doc-panel" id="panelPpt">
+            <div class="doc-meta-bar">
+              <div class="doc-meta-info">
+                <span class="doc-type-tag">Seminar PPT</span>
+                <span>Voice Control Home Automation Presentation · Slides</span>
+              </div>
+              <div class="doc-download-actions">
+                <a href="./docs/voice-automation-presentation.pdf" target="_blank" rel="noopener noreferrer" class="btn-doc-download primary">
+                  <span>👁️</span> Open Fullscreen PDF
+                </a>
+                <a href="./docs/voice-automation-presentation.pptx" download="Voice_control_home_automation_system.pptx" class="btn-doc-download">
+                  <span>📥</span> Download PPTX (.pptx)
+                </a>
+              </div>
+            </div>
+
+            <div class="doc-iframe-box">
+              <iframe src="./docs/voice-automation-presentation.pdf#toolbar=1" title="Voice Automation Project Presentation PDF Preview"></iframe>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Other Projects Section -->
+    <footer class="other-projects-section">
+      <h3 class="other-projects-heading">Explore Other Hardware Projects</h3>
+      <div class="other-projects-grid">
+        <a href="./project-laser-detection.html" class="other-project-card">
+          <div class="other-card-thumb">
+            <img src="./images/laser_detection.png" alt="Laser Thief Detection System" />
+          </div>
+          <div class="other-card-details">
+            <span class="other-card-tag">Project 02 · Embedded Security</span>
+            <h4 class="other-card-title">Laser Thief Detection System</h4>
+            <span class="other-card-sub">Laser Diode · LDR · Threshold Detection · Buzzer</span>
+          </div>
+        </a>
+
+        <a href="./project-touch-sensor.html" class="other-project-card">
+          <div class="other-card-thumb">
+            <img src="./images/bjt_sensor.jpg" alt="BJT-Based Touch Sensor" />
+          </div>
+          <div class="other-card-details">
+            <span class="other-card-tag">Project 03 · Analog Circuit</span>
+            <h4 class="other-card-title">BJT-Based Touch Sensor</h4>
+            <span class="other-card-sub">BC547 BJT · Touch Plate · Discrete Semiconductor</span>
+          </div>
+        </a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    function switchDocTab(type) {
+      const btnReport = document.getElementById('tabBtnReport');
+      const btnPpt = document.getElementById('tabBtnPpt');
+      const panelReport = document.getElementById('panelReport');
+      const panelPpt = document.getElementById('panelPpt');
+
+      if (type === 'report') {
+        btnReport.classList.add('active');
+        btnPpt.classList.remove('active');
+        panelReport.classList.add('active');
+        panelPpt.classList.remove('active');
+      } else {
+        btnPpt.classList.add('active');
+        btnReport.classList.remove('active');
+        panelPpt.classList.add('active');
+        panelReport.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>

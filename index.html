@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akash Rathore — VLSI &amp; Digital IC Design | Embedded Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <div id="loaderProgress" class="loader-progress">0%</div>
+    </div>
+  </div>
+
+  <!-- Pinned Hardware-Accelerated 4K Canvas -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">Akash Rathore</a>
+      <nav class="nav-links">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#work" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Tech Stack</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <a href="#contact" class="btn-touch">
+        <span>Get in touch</span>
+        <div class="btn-arrow-circle">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 6H9.5M9.5 6L6 2.5M9.5 6L6 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <!-- Scroll-driven Content Layer -->
+  <main class="content-wrapper">
+    <!-- SECTION 1: HERO -->
+    <section id="about" class="hero-section">
+      <div class="hero-main-grid">
+        <div class="hero-left">
+          <span class="eyebrow-tag">ECE Undergraduate · Jodhpur Institute of Engineering &amp; Technology</span>
+          <h1 class="hero-title">AKASH<br/>RATHORE</h1>
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-hero-primary">
+              <span>View Projects</span>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 2.5V9.5M6 9.5L2.5 6M6 9.5L9.5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="/Akash_Rathore_Resume.pdf" download="Akash_Rathore_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-hero-secondary">
+              <span>Download Resume</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <h2 class="hero-statement">ECE Undergraduate &nbsp;·&nbsp; VLSI &nbsp;·&nbsp; Digital IC Design &nbsp;·&nbsp; RTL</h2>
+          <p class="hero-subtext">
+            ECE undergraduate with a foundation in digital logic design, RTL coding with Verilog, and hands-on hardware projects. Focused on building strong skills in VLSI, digital IC design, and hardware architecture.
+          </p>
+        </div>
+      </div>
+
+      <!-- Core Disciplines Bar -->
+      <div class="specialties-bar">
+        <div class="specialty-item">
+          <span class="spec-num">// 01</span>
+          <span class="spec-title">Digital Logic &amp; IC Design</span>
+        </div>
+        <div class="specialty-item">
+          <span class="spec-num">// 02</span>
+          <span class="spec-title">RTL Design &amp; Verilog HDL</span>
+        </div>
+        <div class="specialty-item">
+          <span class="spec-num">// 03</span>
+          <span class="spec-title">VLSI &amp; EDA Fundamentals</span>
+        </div>
+        <div class="specialty-item">
+          <span class="spec-num">// 04</span>
+          <span class="spec-title">Embedded Systems &amp; Hardware</span>
+        </div>
+      </div>
+
+      <!-- Core Platforms & Toolchains Bar -->
+      <div class="brands-trust-card">
+        <span class="brands-label">CORE TECHNICAL STACK</span>
+        <div class="brands-list">
+          <div class="brand-item">
+            <svg class="brand-icon" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <span>Xilinx Vivado</span>
+          </div>
+          <div class="brand-item">
+            <svg class="brand-icon" viewBox="0 0 20 20" fill="currentColor">
+              <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M10 3a7 7 0 0 1 0 14V3z"/>
+            </svg>
+            <span>Verilog HDL</span>
+          </div>
+          <div class="brand-item">
+            <svg class="brand-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M6 4h8l-4 6 4 6H6l4-6-4-6z"/>
+            </svg>
+            <span>C / C++</span>
+          </div>
+          <div class="brand-item">
+            <svg class="brand-icon" viewBox="0 0 24 16" fill="none">
+              <rect x="2" y="2" width="20" height="12" rx="6" stroke="currentColor" stroke-width="2"/>
+              <circle cx="8" cy="8" r="4" fill="currentColor"/>
+            </svg>
+            <span>Git &amp; Linux</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: PROJECTS & HARDWARE PROTOTYPES -->
+    <section id="projects" class="behind-designs-section">
+      <div class="section-header-grid">
+        <div class="header-left">
+          <span class="section-badge">Selected Engineering Projects</span>
+          <h2 class="section-title">Turning Digital Logic Into Working Hardware</h2>
+        </div>
+
+        <div class="header-right">
+          <p class="section-desc">
+            Digital logic, RTL concepts, embedded controllers, and circuit-level prototypes built through hands-on engineering projects.
+          </p>
+          <div class="header-actions">
+            <span class="action-subtext">Open for VLSI design internships, RTL opportunities, embedded engineering roles, and technical collaborations.</span>
+            <a href="#contact" class="btn-touch accent">
+              <span>Get in touch</span>
+              <div class="btn-arrow-circle">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 6H9.5M9.5 6L6 2.5M9.5 6L6 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Featured Project Showcase Cards -->
+      <div class="showcase-cards-grid">
+        <!-- Project 1: Voice-Controlled Home Automation -->
+        <a href="./project-home-automation.html" class="showcase-card poster-card" title="Click to view Report &amp; Presentation">
+          <div class="card-action-badge">
+            <span class="badge-dot"></span>
+            <span>Report &amp; PPT →</span>
+          </div>
+          <div class="card-media">
+            <img src="./images/home_automation.jpg" alt="Voice-Controlled Home Automation" loading="lazy" />
+          </div>
+          <div class="card-overlay">
+            <span class="card-tag">Embedded Systems · ESP32 · Voice Recognition · Relay</span>
+            <h3 class="card-heading">Voice-Controlled Home Automation</h3>
+            <p style="font-size: 0.82rem; color: rgba(255, 255, 255, 0.75); line-height: 1.4; margin-top: 0.25rem;">
+              Designed a voice-controlled home automation system for switching AC appliances using ESP32, voice recognition, and relay-based control logic.
+            </p>
+          </div>
+        </a>
+
+        <!-- Project 2: Laser Thief Detection System -->
+        <a href="./project-laser-detection.html" class="showcase-card poster-card" title="Click to view Report &amp; Presentation">
+          <div class="card-action-badge">
+            <span class="badge-dot"></span>
+            <span>Report &amp; PPT →</span>
+          </div>
+          <div class="card-media">
+            <img src="./images/laser_detection.png" alt="Laser Thief Detection System" loading="lazy" />
+          </div>
+          <div class="card-overlay">
+            <span class="card-tag">Arduino · LDR · Laser · Embedded C</span>
+            <h3 class="card-heading">Laser Thief Detection System</h3>
+            <p style="font-size: 0.82rem; color: rgba(255, 255, 255, 0.75); line-height: 1.4; margin-top: 0.25rem;">
+              Built an optical intrusion detection system using a laser-LDR beam, threshold-based detection logic, and an Arduino-controlled buzzer for real-time alerts.
+            </p>
+          </div>
+        </a>
+
+        <!-- Project 3: BJT-Based Touch Sensor -->
+        <a href="./project-touch-sensor.html" class="showcase-card poster-card" title="Click to view Report &amp; Presentation">
+          <div class="card-action-badge">
+            <span class="badge-dot"></span>
+            <span>Report &amp; PPT →</span>
+          </div>
+          <div class="card-media">
+            <img src="./images/bjt_sensor.jpg" alt="BJT-Based Touch Sensor" loading="lazy" />
+          </div>
+          <div class="card-overlay">
+            <span class="card-tag">Analog Electronics · BJT · Transistor Circuit</span>
+            <h3 class="card-heading">BJT-Based Touch Sensor</h3>
+            <p style="font-size: 0.82rem; color: rgba(255, 255, 255, 0.75); line-height: 1.4; margin-top: 0.25rem;">
+              Designed and implemented a touch-sensitive switching circuit using discrete BJTs, demonstrating transistor-level signal amplification and switching without a microcontroller.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 3: EXPERIENCE, INTERNSHIPS & ACADEMICS -->
+    <section id="work" class="workflow-section">
+      <div class="workflow-header-grid">
+        <div class="wf-header-left">
+          <div class="section-pill-badge">
+            <span class="pill-dot"></span>
+            <span>INTERNSHIPS · TRAINING &amp; ACADEMICS</span>
+          </div>
+          <h2 class="wf-title">
+            Where I <em class="title-italic">learn</em>, design &amp; build digital systems.
+          </h2>
+        </div>
+        <div class="wf-header-right">
+          <p class="wf-desc">
+            Technical training and hands-on experience focused on VLSI fundamentals, digital logic, RTL design, Verilog HDL, and EDA tools, complemented by embedded and hardware projects.
+          </p>
+        </div>
+      </div>
+
+      <!-- Stepped Experience & Career Timeline -->
+      <div class="timeline-container">
+        <!-- Domain Category Track Guides -->
+        <div class="timeline-guides">
+          <div class="guide-col">
+            <span class="guide-label">01 — VLSI &amp; RTL DESIGN</span>
+            <span class="guide-sub">VLSI Design · Digital Logic · RTL · Verilog</span>
+          </div>
+          <div class="guide-col">
+            <span class="guide-label">02 — EDA &amp; IMPLEMENTATION</span>
+            <span class="guide-sub">Xilinx Vivado · Simulation · Digital Design</span>
+          </div>
+          <div class="guide-col">
+            <span class="guide-label">03 — ACADEMICS</span>
+            <span class="guide-sub">B.Tech ECE · CGPA 8.81 · JIET</span>
+          </div>
+          <div class="guide-col">
+            <span class="guide-label">04 — EMBEDDED &amp; HARDWARE</span>
+            <span class="guide-sub">ESP32 · Arduino · Circuit Prototyping</span>
+          </div>
+        </div>
+
+        <!-- Balanced Milestones Grid (2 Columns on Desktop) -->
+        <div class="timeline-steps-grid">
+          <!-- Milestone 01: VLSI Training -->
+          <div class="timeline-step">
+            <div class="step-pill">
+              <div class="step-left">
+                <span class="step-num">01</span>
+                <div class="step-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </div>
+                <span class="step-label">VLSI Design &amp; Verification Training</span>
+              </div>
+              <span class="step-duration">JIET · 4 Weeks</span>
+            </div>
+          </div>
+
+          <!-- Milestone 02: Verilog & Vivado -->
+          <div class="timeline-step">
+            <div class="step-pill">
+              <div class="step-left">
+                <span class="step-num">02</span>
+                <div class="step-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </div>
+                <span class="step-label">Verilog HDL · Digital Logic · Xilinx Vivado</span>
+              </div>
+              <span class="step-duration">VLSI / EDA Training</span>
+            </div>
+          </div>
+
+          <!-- Milestone 03: B.Tech Academics -->
+          <div class="timeline-step">
+            <div class="step-pill">
+              <div class="step-left">
+                <span class="step-num">03</span>
+                <div class="step-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <span class="step-label">B.Tech Electronics &amp; Communication Engineering</span>
+              </div>
+              <span class="step-duration">2024–2028 · CGPA 8.81</span>
+            </div>
+          </div>
+
+          <!-- Milestone 04: Hardware Projects -->
+          <div class="timeline-step">
+            <div class="step-pill">
+              <div class="step-left">
+                <span class="step-num">04</span>
+                <div class="step-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                  </svg>
+                </div>
+                <span class="step-label">Laser Detection &amp; BJT Circuit Design</span>
+              </div>
+              <span class="step-duration">Hardware Projects</span>
+            </div>
+          </div>
+
+          <!-- Milestone 05: Voice-Controlled Automation -->
+          <div class="timeline-step">
+            <div class="step-pill">
+              <div class="step-left">
+                <span class="step-num">05</span>
+                <div class="step-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+                <span class="step-label">Voice-Controlled Home Automation</span>
+              </div>
+              <span class="step-duration">ESP32 · Relays · 2025</span>
+            </div>
+          </div>
+
+          <!-- Milestone 06: Robotics Program -->
+          <div class="timeline-step">
+            <div class="step-pill">
+              <div class="step-left">
+                <span class="step-num">06</span>
+                <div class="step-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                  </svg>
+                </div>
+                <span class="step-label">Robotics Software Program · ROS2</span>
+              </div>
+              <span class="step-duration">JIET · 2 Weeks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footnote Callout -->
+        <div class="timeline-footer-note">
+          <span class="pill-dot"></span>
+          <p>ACADEMIC RECORD: Jodhpur Institute of Engineering &amp; Technology (JIET), Jodhpur · B.Tech Electronics &amp; Communication Engineering · 2024–2028 · CGPA: 8.81 (Till 4th Sem) · Rajasthan Board: 81% (10th) · 71% (12th).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: TECH STACK / SKILLS & CERTIFICATIONS -->
+    <section id="skills" class="color-palette-section">
+      <div class="palette-header">
+        <div class="section-pill-badge">
+          <span class="pill-dot"></span>
+          <span>THE STACK · VLSI SKILLS &amp; CERTIFICATIONS</span>
+        </div>
+        <h2 class="palette-title">
+          Building from digital logic to RTL and VLSI design.
+        </h2>
+        <p style="font-size: 1.05rem; color: rgba(255, 255, 255, 0.72); max-width: 720px; line-height: 1.6; margin-top: 1rem;">
+          A focused technical stack spanning digital logic, RTL design, Verilog HDL, EDA tools, programming, and hands-on hardware development.
+        </p>
+      </div>
+
+      <!-- Palette Stage with Orbiting Swatch Ring & Category Cards -->
+      <div class="palette-stage">
+        <!-- SVG Segmented Circular Color Wheel -->
+        <div class="color-wheel-wrapper">
+          <svg class="color-wheel-svg" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Outer dashed guide -->
+            <circle cx="190" cy="190" r="148" stroke="rgba(255, 255, 255, 0.07)" stroke-width="2" stroke-dasharray="6 6" />
+            <!-- Segment Arc 1: Soft White -->
+            <path d="M 190 38 A 152 152 0 0 1 312 98" stroke="rgba(248, 249, 250, 0.95)" stroke-width="18" stroke-linecap="round" />
+            <!-- Segment Arc 2: Deep Blue -->
+            <path d="M 334 148 A 152 152 0 0 1 292 284" stroke="rgba(46, 92, 255, 0.85)" stroke-width="18" stroke-linecap="round" />
+            <!-- Segment Arc 3: Dark Indigo / Cyan -->
+            <path d="M 252 316 A 152 152 0 0 1 126 332" stroke="rgba(56, 189, 248, 0.75)" stroke-width="18" stroke-linecap="round" />
+            <!-- Segment Arc 4: Dark Accent -->
+            <path d="M 84 298 A 152 152 0 0 1 42 160" stroke="rgba(40, 45, 60, 0.95)" stroke-width="18" stroke-linecap="round" />
+            <!-- Segment Arc 5: Charcoal Base -->
+            <path d="M 64 116 A 152 152 0 0 1 146 44" stroke="rgba(255, 255, 255, 0.35)" stroke-width="18" stroke-linecap="round" />
+            <!-- Glowing Orbiting Indicator Nodes -->
+            <circle cx="312" cy="98" r="9" fill="#ffffff" filter="drop-shadow(0 0 10px #ffffff)" />
+            <circle cx="292" cy="284" r="7" fill="#2e5cff" filter="drop-shadow(0 0 10px #2e5cff)" />
+            <circle cx="126" cy="332" r="7" fill="#38bdf8" filter="drop-shadow(0 0 8px #38bdf8)" />
+            <circle cx="42" cy="160" r="7" fill="#64748b" />
+          </svg>
+          <!-- Center Emblem Badge -->
+          <div class="wheel-center-badge">
+            <span class="wheel-center-name">AKASH</span>
+            <span class="wheel-center-tag">VLSI · RTL · DIGITAL DESIGN</span>
+          </div>
+        </div>
+
+        <!-- Floating Glassmorphic Skill Category Cards -->
+        <!-- Card 1: RTL & HDL Design -->
+        <div class="swatch-card card-pos-1 card-soft-white">
+          <div class="card-head">
+            <div class="card-color-chip chip-white"></div>
+            <span class="chip-name">RTL &amp; HDL Design</span>
+          </div>
+          <p class="chip-desc">Hardware description modeling, RTL architecture, and testbench verification.</p>
+          <div class="chip-table">
+            <div class="chip-row">
+              <span class="format">HDL</span>
+              <span class="val">Verilog HDL</span>
+              <span class="pct">RTL Design</span>
+            </div>
+            <div class="chip-row">
+              <span class="format">DESIGN</span>
+              <span class="val">Digital Logic</span>
+              <span class="pct">Comb &amp; Seq</span>
+            </div>
+            <div class="chip-row">
+              <span class="format">SIM</span>
+              <span class="val">RTL Simulation</span>
+              <span class="pct">Waveforms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: VLSI & EDA -->
+        <div class="swatch-card card-pos-2 card-dark-accent">
+          <div class="card-head">
+            <div class="card-color-chip chip-dark"></div>
+            <span class="chip-name">VLSI &amp; EDA</span>
+          </div>
+          <p class="chip-desc">EDA tools for FPGA synthesis, digital simulation, and logic implementation.</p>
+          <div class="chip-table">
+            <div class="chip-row">
+              <span class="format">EDA</span>
+              <span class="val">Xilinx Vivado</span>
+              <span class="pct">RTL &amp; Sim</span>
+            </div>
+            <div class="chip-row">
+              <span class="format">LOGIC</span>
+              <span class="val">Combinational Circuits</span>
+              <span class="pct">MUX / Adders</span>
+            </div>
+            <div class="chip-row">
+              <span class="format">STATE</span>
+              <span class="val">Sequential Circuits</span>
+              <span class="pct">FSM / Flops</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Programming & Hardware -->
+        <div class="swatch-card card-pos-3 card-deep-bg">
+          <div class="card-head">
+            <div class="card-color-chip chip-deep"></div>
+            <span class="chip-name">Programming &amp; Hardware</span>
+          </div>
+          <p class="chip-desc">Low-level embedded development, microcontroller interfacing, and circuit design.</p>
+          <div class="chip-table">
+            <div class="chip-row">
+              <span class="format">CORE</span>
+              <span class="val">C / C++</span>
+              <span class="pct">Programming</span>
+            </div>
+            <div class="chip-row">
+              <span class="format">MCU</span>
+              <span class="val">ESP32 &amp; Arduino</span>
+              <span class="pct">Hands-on</span>
+            </div>
+            <div class="chip-row">
+              <span class="format">CIRCUIT</span>
+              <span class="val">BJTs · Relays · Sensors</span>
+              <span class="pct">Hardware</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Certifications & Training -->
+        <div class="swatch-card card-pos-4 card-electric-blue">
+          <div class="card-head">
+            <div class="card-color-chip chip-blue"></div>
+            <span class="chip-name">Certifications &amp; Training</span>
+          </div>
+          <p class="chip-desc">Structured programs in VLSI verification, RTL synthesis, and technical credentials.</p>
+          <div class="chip-table">
+            <div class="chip-row">
+              <span class="format">VLSI</span>
+              <span class="val">VLSI Design &amp; Verification</span>
+              <span class="pct">Training</span>
+            </div>
+            <div class="chip-row">
+              <span class="format">EDA</span>
+              <span class="val">Verilog HDL &amp; Vivado</span>
+              <span class="pct">Training</span>
+            </div>
+            <div class="chip-row">
+              <span class="format">NPTEL</span>
+              <span class="val">IIT Courses &amp; Certifications</span>
+              <span class="pct">Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating Action CTA Button -->
+      <div style="display: flex; justify-content: center; margin-top: 3.5rem; position: relative; z-index: 5;">
+        <a href="/Akash_Rathore_Resume.pdf" download="Akash_Rathore_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-visit-site" style="position: relative; bottom: auto; left: auto;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download Resume ↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT & GET IN TOUCH -->
+    <section id="contact" class="grow-scale-section">
+      <div class="grow-header">
+        <div class="grow-top-row">
+          <div class="badge-talk">
+            <span class="badge-title">GET IN TOUCH</span>
+            <span class="badge-sub">Open to VLSI internships, RTL design opportunities, digital IC projects, and technical collaborations</span>
+          </div>
+        </div>
+        <div class="grow-bottom-row" style="margin-top: 1.5rem;">
+          <h2 class="grow-word" style="font-size: clamp(2.4rem, 5.5vw, 4.8rem); line-height: 1.1;">
+            LET'S BUILD THE NEXT CIRCUIT.
+          </h2>
+        </div>
+        <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.75); line-height: 1.6; margin-top: 1rem; max-width: 720px;">
+          Open to VLSI internships, RTL design opportunities, digital IC projects, and technical collaborations.
+        </p>
+      </div>
+
+      <!-- Quick Contact Info Pills -->
+      <div style="display: flex; gap: 1.25rem; flex-wrap: wrap; margin-bottom: 2.5rem; position: relative; z-index: 5;">
+        <a href="mailto:theakashrathore@gmail.com" class="contact-pill-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>theakashrathore@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/akash-rathore-153399330/" target="_blank" rel="noopener noreferrer" class="contact-pill-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/akash0935" target="_blank" rel="noopener noreferrer" class="contact-pill-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <span>GitHub</span>
+        </a>
+        <span class="contact-pill-item contact-pill-static">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>Jodhpur, Rajasthan, India</span>
+        </span>
+      </div>
+
+      <!-- High-Contrast Glassmorphic Form Card Wrapper -->
+      <div class="form-card-wrapper" id="formCardWrapper">
+        <form class="grow-form" id="growForm">
+          <div style="margin-bottom: 2.5rem;">
+            <span style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; color: var(--accent-orange); text-transform: uppercase;">
+              START A CONVERSATION
+            </span>
+          </div>
+
+          <div class="form-grid">
+            <!-- Left Column -->
+            <div class="form-col">
+              <div class="form-group">
+                <label for="name" class="form-label">YOUR NAME*</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Recruiter / Collaborator Name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">EMAIL ADDRESS*</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="recruiter@semiconductor.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="organization" class="form-label">ORGANIZATION — OPTIONAL</label>
+                <div class="select-wrap">
+                  <input type="text" id="organization" name="organization" class="form-input" placeholder="Company, University or Research Lab" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="form-col">
+              <div class="form-group">
+                <label for="phone" class="form-label">PHONE — OPTIONAL</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 98765 43210" />
+              </div>
+
+              <div class="form-group">
+                <label for="opportunity" class="form-label">OPPORTUNITY TYPE*</label>
+                <div class="select-wrap">
+                  <select id="opportunity" name="opportunity" class="form-input form-select" required>
+                    <option value="" disabled selected>Select Opportunity Type</option>
+                    <option value="VLSI / RTL Design Internship">VLSI / RTL Design Internship</option>
+                    <option value="Digital IC Design / Verilog HDL">Digital IC Design / Verilog HDL</option>
+                    <option value="VLSI Project Collaboration">VLSI Project Collaboration</option>
+                    <option value="Embedded Systems / Hardware">Embedded Systems / Hardware</option>
+                    <option value="Academic / Technical Collaboration">Academic / Technical Collaboration</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">MESSAGE*</label>
+                <textarea id="message" name="message" class="form-input" rows="2" placeholder="Tell me about your role, project, or inquiry..." required style="resize: vertical; min-height: 44px;"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-bottom-row">
+            <p class="form-promise">All engineering inquiries and messages are reviewed promptly. Direct: theakashrathore@gmail.com</p>
+            <button type="submit" class="btn-touch accent submit-btn">
+              <span>SEND INQUIRY →</span>
+              <div class="btn-arrow-circle">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 6H9.5M9.5 6L6 2.5M9.5 6L6 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER / OUTRO -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <span class="brand-logo" style="font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em;">AKASH RATHORE</span>
+          <p style="font-size: 0.88rem; color: #38bdf8; font-family: var(--font-mono); margin-top: 0.15rem;">
+            ECE Undergraduate · VLSI · Digital IC Design · RTL
+          </p>
+          <p class="footer-copy" style="max-width: 440px; margin-top: 0.35rem;">
+            Engineering digital systems from logic to RTL, with a growing focus on VLSI and digital IC design.
+          </p>
+        </div>
+        <div class="footer-right" style="display: flex; flex-direction: column; gap: 1rem; align-items: flex-end;">
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#work">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-links" style="font-family: var(--font-mono); font-size: 0.85rem;">
+            <a href="https://github.com/akash0935" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/akash-rathore-153399330/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:theakashrathore@gmail.com">Email</a>
+            <a href="/Akash_Rathore_Resume.pdf" download="Akash_Rathore_Resume.pdf" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; font-weight: 700;">Resume ↓</a>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.5rem;">
+            © 2026 Akash Rathore · ECE Undergraduate · VLSI / RTL
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
